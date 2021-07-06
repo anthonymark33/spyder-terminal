@@ -20,19 +20,21 @@ CONF_DEFAULTS = [
       'sound': True,
       'cursor_type': 0,
       'shell': 'cmd' if WINDOWS else 'bash',
-      'buffer_limit': 1000
+      'buffer_limit': 1000,
+      'cursor_blink': True,
+      'zoom': 0,
      }
      ),
     ('shortcuts',
      {
-      'terminal/copy': 'Ctrl+Alt+Shift+C' if LINUX else 'Ctrl+Alt+C',
-      'terminal/paste': 'Ctrl+Alt+Shift+V' if LINUX else 'Ctrl+Alt+V',
-      'terminal/new terminal': 'Ctrl+Alt+T',
-      'terminal/clear': 'Ctrl+Alt+K',
-      'terminal/zoom in': 'Ctrl++',
-      'terminal/zoom out': 'Ctrl+-',
+       'terminal/copy': 'Ctrl+Alt+Shift+C' if LINUX else 'Ctrl+Alt+C',
+       'terminal/paste': 'Ctrl+Alt+Shift+V' if LINUX else 'Ctrl+Alt+V',
+       'terminal/new_terminal': 'Ctrl+Alt+T',
+       'terminal/clear': 'Ctrl+Alt+K',
+       'terminal/zoom_in': 'Ctrl++',
+       'terminal/zoom_out': 'Ctrl+-',
      }
-     ),
+    )
 ]
 
 # IMPORTANT NOTES:
